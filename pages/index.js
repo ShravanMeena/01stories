@@ -54,7 +54,7 @@ export default function Home() {
       <TrendingRow>
         {[1, 2, 3, 4, 5, 6].map((item) => {
           return (
-            <TrendColumn>
+            <TrendColumn key={item}>
               <TrendHeading>
                 <NumberText>0{item}</NumberText> Why I’m Leaving Mumford & Sons
               </TrendHeading>
@@ -68,7 +68,7 @@ export default function Home() {
           <Column>
             {[1, 2, 3, 4].map((item) => {
               return (
-                <Card>
+                <Card key={item}>
                   <CardColumn>
                     <Heading>
                       This Long-Awaited Technology May Finally Change the World
@@ -100,7 +100,7 @@ export default function Home() {
             <Topic>
               {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((tag) => {
                 return (
-                  <Tag>
+                  <Tag key={tag}>
                     <Text>Startups</Text>
                   </Tag>
                 );
