@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Main = styled.div`
   width: 100%;
   background: #0e141b;
-  min-height: 100vh;
   padding: 0 100px;
 `;
 
@@ -66,7 +65,7 @@ export const TrendColumn = styled.div`
 `;
 
 export const TrendHeading = styled.h1`
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: #f2f5f7;
 `;
@@ -79,7 +78,7 @@ export const TrendSubHeading = styled.p`
 `;
 
 export const NumberText = styled.span`
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   color: #7e8c9a;
   margin-right: 5px;
