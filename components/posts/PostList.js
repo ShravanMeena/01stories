@@ -1,13 +1,13 @@
 import React from "react";
 import { Column } from "../../pages/Home.style";
-import EventItems from "./EventItems";
+import PostItem from "./PostItem";
 
-export default function EventList(props) {
+export default function PostList(props) {
   const { items } = props;
   return (
     <Column>
       {items.map((item) => (
-        <EventItems
+        <PostItem
           key={item.id}
           id={item.id}
           title={item.title}

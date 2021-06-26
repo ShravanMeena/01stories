@@ -10,7 +10,8 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import Dp from "../../public/images/Spotify-1624553216310.png";
-export default function EventItems(props) {
+
+export default function PostItem(props) {
   const { title, description, id } = props;
   return (
     <Card>
@@ -18,7 +19,7 @@ export default function EventItems(props) {
         <Heading>{title}</Heading>
         <SubHeading>{description}</SubHeading>
         <Button>
-          <Link href={`/events/${id}`}>
+          <Link href={`/posts/${id}`}>
             <a>Read more</a>
           </Link>
         </Button>

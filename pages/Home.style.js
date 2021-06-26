@@ -49,7 +49,7 @@ export const TrendingRow = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   margin-top: 50px;
   border-bottom: 1px solid #21262d;
   padding-bottom: 30px;
@@ -102,27 +102,33 @@ export const Row = styled.div`
 export const Column = styled.div`
   height: 100%;
   &:nth-child(1) {
-    border-right: 1px solid #21262d;
     width: 100%;
   }
 
   &:nth-child(2) {
     width: 50%;
     padding-left: 60px;
+    padding-top: 40px;
   }
+`;
+
+export const ColumnFirst = styled.div`
+  border-right: 1px solid #21262d;
+  padding-right: 60px;
+  padding-top: 50px;
 `;
 
 export const Card = styled.div`
   display: flex;
   justify-content: space-between;
-  max-width: 740px;
   border: 1px solid #21262d;
   width: 100%;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   padding: 10px 20px;
   align-items: flex-start;
   height: fit-content;
   margin-bottom: 20px;
+  width: 100%;
 
   &:hover {
     transition: all 0.3s ease;
@@ -135,7 +141,7 @@ export const CardColumn = styled.div`
   height: 100%;
 
   &:nth-child(2) {
-    width: 100%;
+    width: 70%;
   }
 `;
 
@@ -197,4 +203,14 @@ export const Button = styled.button`
     cursor: pointer;
     color: #f5f2f7;
   }
+`;
+
+export const Posts = styled.div`
+  padding: 0px 200px;
+`;
+
+export const PostMainTitle = styled.h1`
+  padding: 20px 200px;
+  color: #7e8c9a;
+  font-size: 25px;
 `;
