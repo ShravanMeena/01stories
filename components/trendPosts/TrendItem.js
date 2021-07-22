@@ -7,9 +7,9 @@ import {
 } from "../../pages/Home.style";
 
 export default function EventItems(props) {
-  const { item } = props;
+  const { item,key } = props;
   return (
-    <TrendColumn>
+    <TrendColumn key={key}>
       <TrendHeading>
         <NumberText>0{item}</NumberText> Why I’m Leaving Mumford & Sons
       </TrendHeading>
