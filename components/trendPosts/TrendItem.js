@@ -7,7 +7,7 @@ import {
 } from "../../pages/Home.style";
 
 export default function EventItems(props) {
-  const { item,key } = props;
+  const { item, key } = props;
   return (
     <TrendColumn key={key}>
       <TrendHeading>

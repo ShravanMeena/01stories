@@ -8,12 +8,8 @@ export default function TagList(props) {
     <Column>
       <SubHeading>RECOMMENDED TOPICS</SubHeading>
       <Topic>
-        {items.map((item, index) => {
-          return (
-            <React.Fragment key={index}>
-              <TagItem item={item} />
-            </React.Fragment>
-          );
+        {items.map((item) => {
+          return <TagItem item={item} key={item.id} />;
         })}
       </Topic>
     </Column>
