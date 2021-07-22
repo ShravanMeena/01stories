@@ -8,8 +8,8 @@ export default function TagList(props) {
     <Column>
       <SubHeading>RECOMMENDED TOPICS</SubHeading>
       <Topic>
-        {items.map((item) => (
-          <TagItem item={item} />
+        {items.map((item,index) => (
+          <TagItem item={item} key={index}/>
         ))}
       </Topic>
     </Column>
