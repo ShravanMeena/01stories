@@ -6,8 +6,10 @@ export default function EventList(props) {
   const { items } = props;
   return (
     <TrendingRow>
-      {items.map((item,index) => (
-        <TrendItem item={item} key={index}/>
+      {items.map((item, index) => (
+        <React.Fragment key={index}>
+          <TrendItem item={item} key={index} />
+        </React.Fragment>
       ))}
     </TrendingRow>
   );

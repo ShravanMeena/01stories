@@ -14,21 +14,22 @@ import Dp from "../../public/images/Spotify-1624553216310.png";
 export default function PostItem(props) {
   const { title, description, id } = props;
   return (
-    <Card>
-      <CardColumn>
-        <Heading>{title}</Heading>
-        <SubHeading>{description}</SubHeading>
-        <Button>
-          <Link href={`/posts/${id}`}>
+    <Link href={`/posts/${id}`}>
+      <Card>
+        <CardColumn>
+          <Heading>{title}</Heading>
+          <SubHeading>{description}</SubHeading>
+          <Button>
             <a>Read more</a>
-          </Link>
-        </Button>
-      </CardColumn>
-      <CardColumn>
-        <ImgWrapper>
-          <Image src={Dp} alt='Picture of the author' />
-        </ImgWrapper>
-      </CardColumn>
-    </Card>
+          </Button>
+        </CardColumn>
+
+        <CardColumn>
+          <ImgWrapper>
+            <Image src={Dp} alt='Picture of the author' />
+          </ImgWrapper>
+        </CardColumn>
+      </Card>
+    </Link>
   );
 }

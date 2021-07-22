@@ -6,6 +6,7 @@ import {
   Icon,
 } from "../../pages/Home.style";
 import { FaRegBookmark, FaSearch, FaRegBell } from "react-icons/fa";
+import Link from "next/link";
 
 export default function header() {
   return (
@@ -16,6 +17,10 @@ export default function header() {
       </HeaderHeading>
 
       <RightHeader>
+        <Icon>
+          <Link href={`/posts/`}>All Posts</Link>
+        </Icon>
+
         <Icon>
           <FaRegBookmark />
         </Icon>
