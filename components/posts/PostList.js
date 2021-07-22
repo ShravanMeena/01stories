@@ -6,15 +6,17 @@ export default function PostList(props) {
   const { items } = props;
   return (
     <Column>
-      {items.map((item) => (
-        <PostItem
-          key={item.id}
-          id={item.id}
-          title={item.title}
-          description={item.description}
-          image={item.image}
-        />
-      ))}
+      {items.map((item) => {
+        return (
+          <PostItem
+            key={item.id}
+            id={item.id}
+            title={item.title}
+            description={item.description}
+            image={item.image}
+          />
+        );
+      })}
     </Column>
   );
 }
