@@ -6,8 +6,8 @@ export default function EventList(props) {
   const { items } = props;
   return (
     <TrendingRow>
-      {items.map((item) => (
-        <TrendItem item={item} />
+      {items.map((item,index) => (
+        <TrendItem item={item} key={index}/>
       ))}
     </TrendingRow>
   );
